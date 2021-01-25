@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Good Thymes Virtual Grocery</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<body>
+<div class="container">
+    <h1>Currencies</h1>
+    <table class="table">
+        <tr>
+            <th>Shortcut</th>
+            <th>Full Name</th>
+        </tr>
+        <tr th:each="currency : ${currencies}">
+            <td th:text="${currency.getShortcut()}"></td>
+            <td th:text="${currency.getFullName()}">2.41</td>
+        </tr>
+    </table>
+
+
+</div>
+</body>
+
+</html>
