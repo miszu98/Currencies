@@ -10,9 +10,10 @@
 ## Technologies and Dependecies
 * JAVA language
 * Spring Boot 
-* Database: H2
+* H2
 * Hibernate
 * Thymeleaf
+* Gson
 
 ## Images 
 ![alt text](https://i.imgur.com/KKHNSw5.png)
